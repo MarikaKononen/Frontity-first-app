@@ -1,0 +1,72 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.31.0",
+  "hash": "95b813da19e57c801d4d",
+  "publicPath": "/static/",
+  "outputPath": "/Users/marikakononen/Koodaus/KoodausProjektit/GitHub/Frontity-first-app/build/static",
+  "assetsByChunkName": {
+    "frontity-first-app": "frontity-first-app.module.js",
+    "list": "list.module.js"
+  },
+  "assets": [
+    {
+      "name": "frontity-first-app.module.js",
+      "size": 3003951,
+      "chunks": [
+        "frontity-first-app"
+      ],
+      "chunkNames": [
+        "frontity-first-app"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 15958,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "frontity-first-app": {
+      "chunks": [
+        "frontity-first-app"
+      ],
+      "assets": [
+        "frontity-first-app.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "frontity-first-app": {
+      "chunks": [
+        "frontity-first-app"
+      ],
+      "assets": [
+        "frontity-first-app.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "children": []
+}

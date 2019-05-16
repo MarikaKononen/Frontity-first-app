@@ -1,0 +1,21 @@
+{
+  "name": "frontity-first-app",
+  "version": "0.1.0",
+  "description": "Frontity project",
+  "keywords": [
+    "frontity"
+  ],
+  "scripts": {
+    "dev": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity serve"
+  },
+  "dependencies": {
+    "frontity": "^0.2.9",
+    "@frontity/core": "^0.3.5",
+    "@frontity/file-settings": "^0.2.2",
+    "@frontity/wp-source": "^0.1.5",
+    "@frontity/tiny-router": "^0.3.2",
+    "@frontity/mars-theme": "./packages/mars-theme"
+  }
+}
