@@ -10,6 +10,7 @@ const List = ({ state }) => {
   const items = data.pages[state.router.page];
 
   return items ? (
+    <div>
     <Container>
       {data.isTaxonomy && (
         <Taxonomy>
@@ -23,6 +24,7 @@ const List = ({ state }) => {
       })}
       <Pagination />
     </Container>
+    </div>
   ) : null;
 };
 

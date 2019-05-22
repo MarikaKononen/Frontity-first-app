@@ -1,13 +1,18 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "../link";
+import FeaturedMedia from "../featured-media";
 
 const Item = ({ state, item }) => {
   const author = state.source.author[item.author];
   const date = new Date(item.date);
 
+  
+
   return (
+    
     <Container>
+      <FeaturedMedia id={item.featured_media} />
       <Link path={item.link}>
         <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
       </Link>
@@ -20,13 +25,21 @@ const Item = ({ state, item }) => {
       </Fecha>
       <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
     </Container>
+    
   );
 };
 
 export default connect(Item);
 
+
 const Container = styled.li`
-  margin-bottom: 24px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 45%;
+  
 `;
 
 const Title = styled.h1`

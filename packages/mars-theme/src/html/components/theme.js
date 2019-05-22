@@ -4,6 +4,8 @@ import Header from "./header";
 import List from "./list";
 import Post from "./post";
 import Page404 from "./page404.js";
+import Introduction from "./introduction";
+import HeaderImage from "./headerImage";
 
 const globalStyles = css`
   body {
@@ -20,6 +22,7 @@ const globalStyles = css`
 
 const Theme = ({ state }) => (
   <>
+    <HeaderImage />
     <Head>
       <title>{state.frontity.title}</title>
       <html lang="en" />
@@ -28,29 +31,50 @@ const Theme = ({ state }) => (
     <HeadContainer>
       <Header />
     </HeadContainer>
-    <Body>
-      {state.source.data(state.router.path).isArchive && <List />}
-      {state.source.data(state.router.path).isPostType && <Post />}
-      {state.source.data(state.router.path).is404 && <Page404 />}
-    </Body>
+    <BodyContainer>
+      <Body>
+        
+        {state.source.data(state.router.path).isArchive && <List />}
+        {state.source.data(state.router.path).isPostType && <Post />}
+        {state.source.data(state.router.path).is404 && <Page404 />}
+        
+      </Body>
+      <IntroductionContainer>
+        <Introduction />
+      </IntroductionContainer>
+    </BodyContainer>
+    
+      
+  
   </>
 );
 
 export default connect(Theme);
 
+
 const HeadContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #1f38c5;
+  background-color: #ff9900;
+  padding-bottom: 1rem;
 `;
 
 const Body = styled.div`
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(
-    180deg,
-    rgba(66, 174, 228, 0.1),
-    rgba(66, 174, 228, 0)
-  );
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto auto;
+
+`;
+
+const IntroductionContainer = styled.div`
+  
+  width: 30%;
+  margin: 1.66%;
+
+`;
+
+  const BodyContainer = styled.div`
+    display: grid;
+    grid-template-columns: auto auto;
 `;
