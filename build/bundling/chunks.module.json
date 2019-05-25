@@ -2,27 +2,27 @@
   "errors": [],
   "warnings": [],
   "version": "4.31.0",
-  "hash": "fb0ef2eaea5d429f3af7",
+  "hash": "1db6f6c2dfbbec93838d",
   "publicPath": "/static/",
   "outputPath": "/Users/marikakononen/Koodaus/KoodausProjektit/GitHub/Frontity-first-app/build/static",
   "assetsByChunkName": {
-    "frontity-first-app": [
-      "frontity-first-app.module.js",
-      "frontity-first-app.7b260221689647b6746c.hot-update.js"
-    ],
-    "list": "list.module.js"
+    "frontity-first-app": "frontity-first-app.module.js",
+    "list": [
+      "list.module.js",
+      "list.fcd07a06d22743b4f871.hot-update.js"
+    ]
   },
   "assets": [
     {
-      "name": "7b260221689647b6746c.hot-update.json",
-      "size": 60,
+      "name": "fcd07a06d22743b4f871.hot-update.json",
+      "size": 46,
       "chunks": [],
       "chunkNames": [],
       "emitted": false
     },
     {
-      "name": "frontity-first-app.7b260221689647b6746c.hot-update.js",
-      "size": 5845,
+      "name": "frontity-first-app.module.js",
+      "size": 3019827,
       "chunks": [
         "frontity-first-app"
       ],
@@ -32,19 +32,19 @@
       "emitted": false
     },
     {
-      "name": "frontity-first-app.module.js",
-      "size": 3016115,
+      "name": "list.fcd07a06d22743b4f871.hot-update.js",
+      "size": 5342,
       "chunks": [
-        "frontity-first-app"
+        "list"
       ],
       "chunkNames": [
-        "frontity-first-app"
+        "list"
       ],
       "emitted": false
     },
     {
       "name": "list.module.js",
-      "size": 20941,
+      "size": 21046,
       "chunks": [
         "list"
       ],
@@ -61,8 +61,7 @@
         "frontity-first-app"
       ],
       "assets": [
-        "frontity-first-app.module.js",
-        "frontity-first-app.7b260221689647b6746c.hot-update.js"
+        "frontity-first-app.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -74,8 +73,7 @@
         "frontity-first-app"
       ],
       "assets": [
-        "frontity-first-app.module.js",
-        "frontity-first-app.7b260221689647b6746c.hot-update.js"
+        "frontity-first-app.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -85,7 +83,8 @@
         "list"
       ],
       "assets": [
-        "list.module.js"
+        "list.module.js",
+        "list.fcd07a06d22743b4f871.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

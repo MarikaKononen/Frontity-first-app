@@ -12,6 +12,8 @@ const List = ({ state }) => {
   return items ? (
     <div>
     <Container>
+      <Pagination />
+
       {data.isTaxonomy && (
         <Taxonomy>
           {data.taxonomy}: {state.source[data.taxonomy][data.id].name}
@@ -22,7 +24,7 @@ const List = ({ state }) => {
         // Render one Item for each one.
         return <Item key={item.id} item={item} />;
       })}
-      <Pagination />
+      
     </Container>
     </div>
   ) : null;
@@ -31,9 +33,7 @@ const List = ({ state }) => {
 export default connect(List);
 
 const Container = styled.ul`
-  width: 800px;
   margin: 0;
-  padding: 24px;
   list-style: none;
 `;
 

@@ -2,6 +2,7 @@ import React from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
 import Nav from "./nav";
+//import HeaderImage from "./header-image";
 
 const Header = ({ state }) => (
   <>
@@ -10,6 +11,7 @@ const Header = ({ state }) => (
         <Title>{state.frontity.title}</Title>
       </StyledLink>
       <Description>{state.frontity.description}</Description>
+      
     </Container>
     <Nav />
   </>
@@ -26,6 +28,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
 `;
 
 const Title = styled.h2`

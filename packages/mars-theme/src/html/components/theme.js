@@ -5,13 +5,13 @@ import List from "./list";
 import Post from "./post";
 import Page404 from "./page404.js";
 import Introduction from "./introduction";
-import HeaderImage from "./headerImage";
+
 
 const globalStyles = css`
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #3d5c5c;  
   }
   a,
   a:visited {
@@ -22,7 +22,7 @@ const globalStyles = css`
 
 const Theme = ({ state }) => (
   <>
-    <HeaderImage />
+    
     <Head>
       <title>{state.frontity.title}</title>
       <html lang="en" />
@@ -31,18 +31,18 @@ const Theme = ({ state }) => (
     <HeadContainer>
       <Header />
     </HeadContainer>
-    <BodyContainer>
-      <Body>
-        
-        {state.source.data(state.router.path).isArchive && <List />}
-        {state.source.data(state.router.path).isPostType && <Post />}
-        {state.source.data(state.router.path).is404 && <Page404 />}
-        
-      </Body>
-      <IntroductionContainer>
+    <IntroductionContainer>
         <Introduction />
-      </IntroductionContainer>
-    </BodyContainer>
+    </IntroductionContainer>
+ 
+    <Body>
+        
+      {state.source.data(state.router.path).isArchive && <List />}
+      {state.source.data(state.router.path).isPostType && <Post />}
+      {state.source.data(state.router.path).is404 && <Page404 />}
+        
+    </Body>  
+ 
     
       
   
@@ -61,20 +61,19 @@ const HeadContainer = styled.div`
 `;
 
 const Body = styled.div`
+  background-color: #e0ebeb;
+  width: 100%;
   display: grid;
-  grid-column-gap: 5px;
   grid-template-columns: auto auto auto;
+  padding-top: 20px;
+  border-top: 1px solid #3d5c5c;
 
 `;
 
 const IntroductionContainer = styled.div`
-  
-  width: 30%;
-  margin: 1.66%;
-
+  padding: 20px;
+  text-align: center;
+  background-color:  #e0ebeb
+  ;
 `;
 
-  const BodyContainer = styled.div`
-    display: grid;
-    grid-template-columns: auto auto;
-`;

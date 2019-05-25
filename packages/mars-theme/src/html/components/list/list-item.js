@@ -7,15 +7,10 @@ const Item = ({ state, item }) => {
   const author = state.source.author[item.author];
   const date = new Date(item.date);
 
-  
-
   return (
     
     <Container>
       <FeaturedMedia id={item.featured_media} />
-      <Link path={item.link}>
-        <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
-      </Link>
       <Author>
         By <b>{author.name}</b>
       </Author>
@@ -23,7 +18,11 @@ const Item = ({ state, item }) => {
         {" "}
         on <b>{date.toDateString()}</b>
       </Fecha>
-      <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
+      <Link path={item.link}>
+        <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
+      </Link>
+      
+      
     </Container>
     
   );
@@ -33,12 +32,14 @@ export default connect(Item);
 
 
 const Container = styled.li`
-  border: 1px solid black;
   text-align: center;
   margin: 10px;
+  padding: 0 15px;
   border: 1px solid #ccc;
   float: left;
-  width: 45%;
+  background-color: #f0f5f5;
+  border-radius: 15px;
+  width: 25%;
   
 `;
 
@@ -47,6 +48,8 @@ const Title = styled.h1`
   margin: 0;
   margin-top: 24px;
   margin-bottom: 8px;
+  font-size: 1.2rem;
+  min-height:120px;
 `;
 
 const Author = styled.p`
@@ -64,4 +67,5 @@ const Fecha = styled.p`
 const Excerpt = styled.div`
   line-height: 1.6em;
   color: rgba(12, 17, 43, 0.8);
+  font-size: 0.8rem;
 `;

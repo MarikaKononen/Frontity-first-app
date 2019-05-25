@@ -27,7 +27,9 @@ export default connect(FeaturedMedia);
 
 const Image = styled.img`
   margin-top: 16px;
-  height: 300px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid #545454;
 `;

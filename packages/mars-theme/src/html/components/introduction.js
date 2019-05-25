@@ -1,14 +1,15 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import List from "./list";
+import IntroItem from "./intro-item";
 
 const Introduction = () => {
   return  (
     <Container>
-
-        <h1>test</h1>
-        <p>This is a test content</p>
-
+      <IntroItem />
+      <IntroItem />
+      <IntroItem />
+      <IntroItem />
     </Container>
   ) 
 };
@@ -16,6 +17,9 @@ const Introduction = () => {
 export default connect(Introduction);
 
 const Container = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
   
 
 `;

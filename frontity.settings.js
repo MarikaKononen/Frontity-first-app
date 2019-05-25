@@ -14,30 +14,12 @@ const settings = {
       "state": {
         "theme": {
           "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Coding",
-              "/category/technical-things/coding/"
-            ],
-            [
-              "Technical Things",
-              "/category/technical-things/"
-            ],
-            [
-              "WordPress",
-              "/category/technical-things/wordpress-en/"
-            ],
-            [
-              "Contact",
-              "/contact/"
-            ],
-            [
-              "About Me",
-              "/me-and-my-blog/"
-            ]
+            ["Home","/"],
+            ["Coding","/category/technical-things/coding/"],
+            ["Technical Things","/category/technical-things/"],
+            ["WordPress","/category/technical-things/wordpress-en/"],
+            ["Contact","/contact/"],
+            ["About Me","/me-and-my-blog/"]
           ]
         }
       }
