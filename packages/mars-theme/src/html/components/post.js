@@ -1,15 +1,25 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import List from "./list";
+import FeaturedMedia from "./featured-media";
 
 const Post = ({ state, actions }) => {
   // Get info of current post.
   const data = state.source.data(state.router.path);
   // Get the the post.
   const post = state.source[data.type][data.id];
+  console.log("post", post);
   // Get the author.
   const author = state.source.author[post.author];
   const date = new Date(post.date);
+  // Get the featured image. 
+  // Get featured media ID
+  const fmediaId = post.featured_media;
+  console.log("fmediaId", fmediaId);
+  // Get featured media source url
+  // const fmedia = state.source.attachment[fmediaId].source_url;
+  //console.log("fmedia", fmedia);
+
 
   // Prefetch home posts and the list component.
   actions.source.fetch("/");
@@ -18,6 +28,7 @@ const Post = ({ state, actions }) => {
   return data.isReady ? (
     <Container>
       <Head>
+        <FeaturedMedia id={post.featured_media} />
         <Title>{post.title.rendered}</Title>
         {data.isPost && (
           <>
@@ -43,9 +54,10 @@ const Post = ({ state, actions }) => {
 export default connect(Post);
 
 const Container = styled.div`
-  width: 800px;
+  width: 50%;
   margin: 0;
   padding: 24px;
+  
 `;
 
 const Head = styled.div``;
