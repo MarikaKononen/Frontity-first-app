@@ -55,8 +55,11 @@ export default connect(Post);
 
 const Container = styled.div`
   width: 50%;
-  margin: 0;
+  margin: 0 auto;
   padding: 24px;
+  border: 1px solid #009999;
+  border-radius: 15px;
+  background-color: #f0f5f5;
   
 `;
 

@@ -21,6 +21,7 @@ const globalStyles = css`
 `;
 
 const Theme = ({ state }) => (
+  
   <>
     
     <Head>
@@ -31,9 +32,7 @@ const Theme = ({ state }) => (
     <HeadContainer>
       <Header />
     </HeadContainer>
-    <IntroductionContainer>
-        <Introduction />
-    </IntroductionContainer>
+   
  
     <Body>
         
@@ -56,7 +55,7 @@ const HeadContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #ff9900;
+  background-color: #009999;
   padding-bottom: 1rem;
 `;
 
@@ -67,6 +66,7 @@ const Body = styled.div`
   grid-template-columns: auto auto auto;
   padding-top: 20px;
   border-top: 1px solid #3d5c5c;
+  margin: 0 auto;
 
 `;
 

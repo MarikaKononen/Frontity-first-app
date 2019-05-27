@@ -31,12 +31,12 @@ const Container = styled.div`
   
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   margin: 0;
   margin-bottom: 16px;
 `;
 
-const Description = styled.h4`
+const Description = styled.h2`
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
 `;

@@ -2,7 +2,7 @@ const settings = {
   "name": "frontity-first-app",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.io",
+      "url": "https://codeformylife.com",
       "title": "Code for My Life Blog",
       "description": "WordPress installation for Frontity development"
     }

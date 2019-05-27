@@ -35,7 +35,7 @@ const Container = styled.li`
   text-align: center;
   margin: 10px;
   padding: 0 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #009999;
   float: left;
   background-color: #f0f5f5;
   border-radius: 15px;
