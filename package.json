@@ -11,7 +11,7 @@
     "serve": "frontity serve"
   },
   "dependencies": {
-    "@frontity/core": "^0.3.5",
+    "@frontity/core": "^0.4.0",
     "@frontity/file-settings": "^0.2.2",
     "@frontity/mars-theme": "./packages/mars-theme",
     "@frontity/tiny-router": "^0.3.2",

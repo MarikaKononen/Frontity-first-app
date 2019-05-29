@@ -32,7 +32,9 @@ const Theme = ({ state }) => (
     <HeadContainer>
       <Header />
     </HeadContainer>
-   
+    <IntroductionContainer>
+      <Introduction />
+    </IntroductionContainer>
  
     <Body>
         
