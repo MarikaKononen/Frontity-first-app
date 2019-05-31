@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.32.2",
-  "hash": "b351147971e2399beb16",
+  "hash": "6a526b7f0c4c4002d9cd",
   "publicPath": "/static/",
   "outputPath": "/Users/marikakononen/Koodaus/KoodausProjektit/GitHub/Frontity-first-app/build/static",
   "assetsByChunkName": {
@@ -12,21 +12,21 @@
   "assets": [
     {
       "name": "frontity-first-app.module.js",
-      "size": 3102325,
+      "size": 3024601,
       "chunks": [
         "frontity-first-app"
       ],
       "chunkNames": [
         "frontity-first-app"
       ],
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/metsa.png",
       "size": 17345796,
       "chunks": [],
       "chunkNames": [],
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "list.module.js",
@@ -37,7 +37,7 @@
       "chunkNames": [
         "list"
       ],
-      "emitted": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
